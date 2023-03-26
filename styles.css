@@ -13,13 +13,13 @@ body {
     border-radius: 5px; /* Bordes redondeados */
 }
 
-/* Estilo para el título */
+/* Estilo para el título Negro oscuro */
 h1 {
-    color: #E0E0E0;
+    color: #212121;
 }
 
 /* Estilo para el párrafo */
 p {
-    color: #E0E0E0;
+    color: #212121;
 }
 
