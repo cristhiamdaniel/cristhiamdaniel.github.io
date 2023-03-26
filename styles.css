@@ -12,3 +12,14 @@ body {
     padding: 20px; /* Espacio alrededor del contenido */
     border-radius: 5px; /* Bordes redondeados */
 }
+
+/* Estilo para el título */
+h1 {
+    color: #E0E0E0;
+}
+
+/* Estilo para el párrafo */
+p {
+    color: #E0E0E0;
+}
+
