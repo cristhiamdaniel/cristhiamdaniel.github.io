@@ -3,4 +3,12 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed; /* Asegura que el fondo no se desplace con el contenido */
+    min-height: 100vh; /* Establece la altura mínima del body al 100% de la altura de la ventana del navegador */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Blanco semitransparente */
+    padding: 20px; /* Espacio alrededor del contenido */
+    border-radius: 5px; /* Bordes redondeados */
 }
