@@ -23,3 +23,30 @@ p {
     color: #212121;
 }
 
+.apartado {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.apartado:hover {
+    color: #0056b3;
+}
+
+.seccion {
+    background-image: url('https://via.placeholder.com/800x600.png');
+    background-size: cover;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 50px;
+    text-align: center;
+}
+
+.seccion a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
