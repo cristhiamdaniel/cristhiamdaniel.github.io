@@ -1,10 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de POO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-$END$
+<div class="container">
+    <h1>Fundamentos de POO</h1>
+    <div class="objeto-definicion">
+        <h2>Objeto</h2>
+        <p>Definición: Un objeto es un concepto, abstracción o cosa con límites bien definidos y con significado dentro del problema.</p>
+    </div>
+    <p class="objeto-texto">
+        La programación orientada a objetos, como en toda metodología de desarrollo de software, requiere de un riguroso proceso de identificación y modelado de cada uno de los entes que conforman el problema. Para lograr esto, resulta de gran utilidad hacerse una imagen mental de una posible situación que involucre a los objetos y permita identificar de manera clara y precisa sus características y comportamientos. <br>
+
+        <br> En este sentido, un ejemplo práctico puede ser el cálculo de la nómina de una empresa que cuenta con un reducido número de empleados. Al imaginar la situación, se puede suponer que la empresa tiene solamente tres empleados, cuya información se muestra a continuación. A partir de estos datos, se pueden crear los objetos necesarios y definir sus atributos y métodos para realizar el cálculo de la nómina de manera eficiente y precisa.
+    </p>
+    <div class="objeto-imagen">
+        <img src="objetos.png" alt="Imagen de objetos">
+    </div>
+    <div class="objeto-tabla">
+        <h3>Tabla de objetos</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Objeto</th>
+                <th>Cédula</th>
+                <th>Apellido</th>
+                <th>Nombre</th>
+                <th>Sueldo por hora</th>
+                <th>Horas trabajadas</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Objeto 1</td>
+                <td>12345</td>
+                <td>Perez</td>
+                <td>Pedro</td>
+                <td>20</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Objeto 2</td>
+                <td>98765</td>
+                <td>Sanchez</td>
+                <td>Maria</td>
+                <td>10</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td>Objeto 3</td>
+                <td>45673</td>
+                <td>Garcia</td>
+                <td>Luis</td>
+                <td>15</td>
+                <td>100</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="clase-definicion">
+        <h2>Clase</h2>
+        <p>Definición: Una clase describe a un conjunto de objetos que comparten una estructura y un comportamiento comun</p>
+    </div>
+    <p class="clase-texto">
+        En el mundo de la programación, una clase se puede describir como una plantilla o molde que define las características y comportamientos de los objetos pertenecientes a dicha clase. Esta plantilla especifica los atributos y métodos que cada objeto de la clase tendrá, y cómo interactuará con otros objetos del mismo tipo y con el entorno en el que se encuentre. <br>
+
+        <br>En el ámbito de la construcción, una clase puede ser comparada con el plano de una casa, el cual indica la estructura y características que deberá tener cada una de las viviendas. Los objetos, por su parte, son la materialización de las casas construidas a partir de dicho plano, cada una con sus propias particularidades y detalles.<br>
+
+        <br>En este contexto, un objeto se define como una instancia de una clase, es decir, una copia concreta que hereda todas las características y comportamientos definidos en la clase, y que puede interactuar con el mundo exterior de forma autónoma. Esta analogía ayuda a comprender de manera sencilla y clara la noción de clase y objeto en programación orientada a objetos, una de las bases fundamentales para el desarrollo de software moderno.
+    </p>
+    <pre class="java">
+        class Empleado {
+            String cedula;
+            String apellido;
+            String nombre;
+            double horasTrabajadas;
+            double sueldoXHora;
+        }
+    </pre>
+    <div class="atributo-definicion">
+        <h2>Atributo</h2>
+        <p>Definición: Un atributo es una propiedad que ayuda a describir un objeto</p>
+    </div>
+    <p class="atributo-texto">
+        Es importante destacar que el concepto de atributo está estrechamente ligado al de variable, ya que en esencia todo atributo es un tipo de variable. Sin embargo, es importante señalar que no toda variable que pueda definirse en un programa en Java es necesariamente un atributo. <br>
+
+        <br>Para que una variable sea considerada un atributo, debe cumplir ciertas condiciones, como por ejemplo estar definida dentro de una clase y ser parte integral de la estructura de dicha clase. Además, los atributos suelen tener una visibilidad específica (pública, privada, protegida, etc.) que determina cómo pueden ser accedidos y modificados desde otras partes del programa.<br>
+
+        <br>En definitiva, los atributos son elementos fundamentales en la programación orientada a objetos, ya que permiten definir las características esenciales de cada objeto y le dan cohesión y sentido dentro del sistema. Dominar el concepto de atributo es esencial para el desarrollo de software de calidad y eficiente.
+    </p>
+    <div class="atributo-imagen1">
+        <img src="casaJava1.png" alt="Imagen de atributos">
+    </div>
+    <div class="atributo-imagen2">
+        <img src="casaJava2.png" alt="Imagen de atributos">
+    </div>
+
+</div>
+
+<style>
+    .objeto-definicion {
+        border: 2px solid black;
+        background-color: #F0F0F0;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .clase-definicion {
+        border: 2px solid black;
+        background-color: #F0F0F0;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .objeto-texto {
+        font-family: 'Courier New', monospace;
+        background-color: #F0F0F0;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    .clase-texto {
+        font-family: 'Courier New', monospace;
+        background-color: #F0F0F0;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    .atributo-definicion {
+        border: 2px solid black;
+        background-color: #F0F0F0;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .atributo-texto {
+        font-family: 'Courier New', monospace;
+        background-color: #F0F0F0;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    .objeto-imagen {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .atributo-imagen1 {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .atributo-imagen2 {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .atributo-imagen1 img,
+    .atributo-imagen2 img {
+        max-width: 100%;
+        max-height: 400px;
+    }
+    .objeto-tabla {
+        margin-top: 20px;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        background-color: #F0F0F0;
+    }
+    pre {
+        background-color: #272822;
+        color: #F8F8F2;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>
